@@ -1703,9 +1703,12 @@ footer .footer__bottom .copy__right .simple__link {
 
     /* ===== header ===== */
 
-    .header__main .header__main--wrap .header__search {
-        max-width: 600px;
-        min-width: 0;
+    .header__main .header__main--wrap .header__info--wrap {
+        margin: 0 40px;
+    }
+
+    .header__main .header__main--wrap .header__social--tell {
+        display: none;
     }
 
     /* ===== menu__category ===== */
@@ -1784,6 +1787,10 @@ footer .footer__bottom .copy__right .simple__link {
 
     /* ===== header ===== */
 
+    .header__main .header__main--wrap .header__info--wrap {
+        justify-content: end;
+    }
+
     .header__main .header__main--wrap .header__menu i {
         font-weight: 600;
     }
@@ -1802,8 +1809,7 @@ footer .footer__bottom .copy__right .simple__link {
         max-width: inherit;
     }
 
-    .container__wrap .main__content .slider .flex__center,
-    .container__wrap .main__content .slider .flex__left {
+    .container__wrap .main__content .slider .flex__center {
         display: none;
     }
 
@@ -1915,6 +1921,16 @@ footer .footer__bottom .copy__right .simple__link {
         margin-top: 20px;
     }
 
+    /* ===== slider ===== */
+
+    .container__wrap .main__content .slider .flex__left {
+        display: none;
+    }
+
+    .container__wrap .main__content .slider .item .slide__primary img {
+        width: 100%;
+    }
+
     /* ===== banner ===== */
 
     .banner .banner__wrap .banner__list .banner__item:nth-child(2) {
@@ -1955,6 +1971,10 @@ footer .footer__bottom .copy__right .simple__link {
         -webkit-transform: translateY(-50%);
             -ms-transform: translateY(-50%);
                 transform: translateY(-50%);
+    }
+
+    .container__wrap .main__content .slider {
+        margin: 0 -60px;
     }
 
     .container__wrap .main__content .slider .flex__right {
@@ -2085,6 +2105,10 @@ footer .footer__bottom .copy__right .simple__link {
 
     .container__wrap .main__content .slider .slide__primary--trending {
         margin-bottom: 0px;
+    }
+
+    .container__wrap .main__content .slider .item .slide__relative .slide__absolute {
+        left: 80px;
     }
 
     .container__wrap .main__content .slider .flex__right .slide__primary--wrap .slide__primary--sub {
