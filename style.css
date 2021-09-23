@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
@@ -448,9 +449,6 @@ header .header__main {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     padding-right: 40px;
 }
 
@@ -467,13 +465,17 @@ header .header__main {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    margin: 0 20px 0 40px;
 }
 
 .header__main .header__main--wrap .header__social--wrap {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 30%;
+    width: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: end;
@@ -1004,6 +1006,10 @@ header .header__main {
 .container__wrap .main__content .slider .flex__center .slide__secondary--title,
 .container__wrap .main__content .slider .flex__left .banner__title {
     margin-bottom: 20px;
+}
+
+.container__wrap .main__content .slider .flex__left {
+    padding-left: 20px;
 }
 
 .container__wrap .main__content .slider .flex__right .item .slide__relative .slide__absolute {
@@ -1657,7 +1663,9 @@ footer .download__wrap .app__name::before {
     height: 20px;
     width: 1px;
     background-color: #3e7d5d;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
 }
 
 footer .download__wrap .app__name span:first-child {
@@ -1772,6 +1780,19 @@ footer .get__app span {
         margin-top: 20px;
     }
 
+    /* ===== header ===== */
+
+    .header__main .header__main--wrap {
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+
+    .header__main .header__main--wrap .header__info--wrap {
+        margin: 0;
+        padding: 0 20px;
+    }
+
     /* ===== Slider ===== */
 
     .container__wrap .main__content .slider {
@@ -1798,12 +1819,12 @@ footer .get__app span {
 
     .container__wrap .main__content .slider .item .slide__relative .slide__absolute {
         position: absolute;
-        top: 30px;
+        top: 40px;
         left: 40px;
     }
 
     .container__wrap .main__content .slider .flex__right .item .slide__relative .slide__absolute {
-        top: 40px;
+        top: 30px;
         left: 40px;
     }
 
@@ -1911,7 +1932,7 @@ footer .get__app span {
     /* ===== header ===== */
 
     .header__main .header__main--wrap .header__info--wrap {
-        margin: 0 40px;
+        margin: 0;
     }
 
     .header__main .header__main--wrap .header__social--tell {
