@@ -992,7 +992,7 @@ header .header__main {
 
 .slider .banner .banner__price .numb {
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .slider .banner .banner__price .mt {
@@ -1646,7 +1646,18 @@ footer .download__wrap .icon i {
 
 footer .download__wrap .app__name {
     padding-left: 10px;
-    border-left: 1px solid var(--color__border);
+    position: relative;
+}
+
+footer .download__wrap .app__name::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 20px;
+    width: 1px;
+    background-color: #3e7d5d;
+    transform: translateY(-50%);
 }
 
 footer .download__wrap .app__name span:first-child {
@@ -1743,6 +1754,12 @@ footer .get__app span {
 
 /* ===== RESPONSIVE ===== */
 
+@media (max-width: 1900px) {
+    .container__wrap .main__content .slider .flex__right .item .slide__relative .slide__absolute {
+        top: 20px;
+    }
+}
+
 @media (max-width: 1399.98px) { 
     /* ===== general ===== */
 
@@ -1781,7 +1798,7 @@ footer .get__app span {
 
     .container__wrap .main__content .slider .item .slide__relative .slide__absolute {
         position: absolute;
-        top: 40px;
+        top: 30px;
         left: 40px;
     }
 
