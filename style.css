@@ -1191,9 +1191,14 @@ header .header__main {
 
 .flash__sale .flash__sale--list .product__item {
     background-color: var(--bg__white);
-    padding: 20px 20px 30px 20px;
+    /* padding: 20px 20px 30px 20px; */
     position: relative;
 }
+
+.flash__sale .flash__sale--list .product__item .content__wrap {
+    padding: 20px 20px 30px 20px;
+}
+
 
 /* ====== */
 
