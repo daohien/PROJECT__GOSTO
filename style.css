@@ -240,6 +240,11 @@ p {
     border-radius: 10px;
 }
 
+.list__products .product__item img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
 .product__item .status {
     position: absolute;
     top: 20px;
@@ -2533,6 +2538,8 @@ footer .get__app span {
 
     .shipping .shipping__list .shipping__item {
         min-width: calc(50% - 20px);
+        padding-right: 20px;
+        padding-left: 20px;
     } 
 
     .shipping .shipping__list .shipping__item {
@@ -2716,8 +2723,8 @@ footer .get__app span {
     }
 
     .banner .banner__wrap .banner__list .banner__item .banner__item--content {
-        padding-top: 50px;
-        padding-left: 50px;
+        padding-top: 20px;
+        padding-left: 20px;
     }
 
     .banner .banner__item .banner__item--content .f-size24 {
