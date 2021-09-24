@@ -1,3 +1,16 @@
+function header(){
+    let header = document.getElementById("scroll__header");
+    window.addEventListener("scroll", function(){
+        var h = window.scrollY;
+        if(h > 80){
+            header.classList.add("active");
+        } else {
+            header.classList.remove('active')
+        }
+    })
+}
+header()
+
 let menu__category = document.querySelector(".menu__category");
 let menuBar = document.querySelector("#menu")
 window.addEventListener("scroll", function () {
@@ -10,6 +23,7 @@ window.addEventListener("scroll", function () {
         menuBar.classList.remove("top")
     }
 })
+
 
 function menuCategory() {
     let clickCategory = document.querySelector(".menu__category > .icon");
@@ -32,6 +46,7 @@ function navBar() {
     console.log(menuBar)
     let nav = document.querySelector(".nav__bar");
     let check = "first";
+    let closeMenu =  document.querySelector(".close");
     nav.addEventListener("click", function () {
         if (check == "first") {
             check = "secondary";
@@ -41,9 +56,15 @@ function navBar() {
             menuBar.classList.remove("active");
         }
     })
+
+    closeMenu.addEventListener("click", function(){
+        menuBar.classList.remove("active");
+    })
 }
 
 navBar()
+
+
 
 // footer
 

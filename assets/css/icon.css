@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icons-gosto';
-  src:  url('../fonts/icons-gosto.eot?ydz1q7');
-  src:  url('../fonts/icons-gosto.eot?ydz1q7#iefix') format('embedded-opentype'),
-    url('../fonts/icons-gosto.ttf?ydz1q7') format('truetype'),
-    url('../fonts/icons-gosto.woff?ydz1q7') format('woff'),
-    url('../fonts/icons-gosto.svg?ydz1q7#icons-gosto') format('svg');
+  src:  url('../fonts/icons-gosto.eot?vx6wqe');
+  src:  url('../fonts/icons-gosto.eot?vx6wqe#iefix') format('embedded-opentype'),
+    url('../fonts/icons-gosto.ttf?vx6wqe') format('truetype'),
+    url('../fonts/icons-gosto.woff?vx6wqe') format('woff'),
+    url('../fonts/icons-gosto.svg?vx6wqe#icons-gosto') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-align-justify:before {
+  content: "\e913";
+}
+.icon-twitter1:before {
+  content: "\e914";
+}
 .icon-down-arrow:before {
   content: "\e912";
 }
