@@ -2389,6 +2389,10 @@ footer .get__app span {
         padding: 20px;
     }
 
+    /* ===== slider ===== */
+
+
+
     /* ===== header ===== */
 
     header.active {
@@ -2662,6 +2666,14 @@ footer .get__app span {
     }
 
     .banner .banner__wrap .banner__list .banner__item:nth-child(2) {
+        margin-top: 20px;
+    }
+
+    .laster__review .laster__review--list .laster__review--item {
+        width: 100%;
+    }
+
+    .laster__review .laster__review--list .laster__review--item:nth-child(2){
         margin-top: 20px;
     }
 
