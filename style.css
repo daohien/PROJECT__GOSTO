@@ -391,7 +391,7 @@ input[type='checkbox'] {
     color: var(--color-white);
 }
 
-.product__hover .icon:nth-child(2) {
+.product__hover .icon:hover {
     background-color: var(--bg__secondary);
 }
 
@@ -749,6 +749,10 @@ header .header__main {
     height: 360px;
     width: 3px;
     background-color: var(--bg__border--right);
+}
+
+.menu__category #click__show--info i {
+    opacity: 0;
 }
 
 .container__wrap .menu__category .icon {
@@ -2129,9 +2133,12 @@ footer .get__app span {
 @media screen and (max-width:992px){ 
 
     /* ===== extra ===== */
-
-    
+ 
     /* ===== header ===== */
+
+    .header__main .header__main--wrap {
+        padding-right: 0;
+    }
 
     .header__main .header__main--wrap .header__info--wrap {
         -webkit-box-pack: end;
@@ -2236,6 +2243,13 @@ footer .get__app span {
         margin-top: 20px;
     }
 
+    /* ===== banner ===== */
+
+    .banner .banner__wrap .banner__list .banner__item .banner__item--content {
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+
     /* ===== footer ===== */
 }
 
@@ -2297,6 +2311,9 @@ footer .get__app span {
 
     .menu__category #click__show--info i {
         margin-left: 50px;
+        color: var(--color__text--secondary);
+        opacity: 1;
+        font-weight: 500;
         color: var(--color__text--secondary);
     }
 
@@ -2437,8 +2454,6 @@ footer .get__app span {
             -ms-transform: translateY(-50%);
                 transform: translateY(-50%);
     }
-
- 
 }
 
 @media screen and (max-width:576px) {
@@ -2452,10 +2467,6 @@ footer .get__app span {
     .container__wrap .main__content {
         padding: 20px;
     }
-
-    /* ===== slider ===== */
-
-
 
     /* ===== header ===== */
 
@@ -2633,9 +2644,6 @@ footer .get__app span {
 
 @media screen and (max-width:480px) {
 
-    .product__hover {
-        display: none;
-    }
     /* ===== general ===== */
 
     h1 {
