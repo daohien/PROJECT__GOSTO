@@ -43,7 +43,6 @@ menuCategory()
 
 function navBar() {
     let menuBar = document.querySelector("#menu")
-    console.log(menuBar)
     let nav = document.querySelector(".nav__bar");
     let check = "first";
     let closeMenu =  document.querySelector(".close");
@@ -64,7 +63,23 @@ function navBar() {
 
 navBar()
 
+function allCategory(){
+    let checks ="clickOne";
+    let menuTitle = document.getElementById("click__show--info");
+    let menuList = document.querySelector("#menu__show");
+    console.log(menuList)
+    menuTitle.addEventListener("click", function(){
+        if(checks == "clickOne"){
+            checks = "clickTwo";
+            menuList.classList.add("active")
+        } else if(checks == "clickTwo"){
+            checks = "clickOne";
+            menuList.classList.remove("active")
+        }
+    })
+}
 
+allCategory()
 
 // footer
 
