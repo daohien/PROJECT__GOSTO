@@ -242,7 +242,8 @@ p {
 
 .list__products .product__item img {
     max-width: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .product__item .status {
@@ -1918,6 +1919,11 @@ footer .get__app span {
         margin-top: 20px;
     }
 
+    .main__content .slider .flex__left .item .slide__relative .slide__absolute {
+        top: 30px;
+        left: 30px;
+    }
+
     /* ===== header ===== */
 
     .header__main .header__main--wrap {
@@ -2065,6 +2071,9 @@ footer .get__app span {
         padding-top: 25px;
         padding-left: 25px;
     }
+
+    
+
 }
 
 @media screen and (max-width:1199.98px){ 
@@ -2320,12 +2329,16 @@ footer .get__app span {
     .menu__category #menu__show {
         height: 0;
         overflow: hidden;
+        -webkit-transition: all .3s ease;
+        -o-transition: all .3s ease;
         transition: all .3s ease;
     }
 
     .menu__category .active#menu__show {
         height: 380px;
         margin-bottom: 30px;
+        -webkit-transition: all .3s ease;
+        -o-transition: all .3s ease;
         transition: all .3s ease;
     }
 
@@ -2333,6 +2346,15 @@ footer .get__app span {
         margin:0 0 30px 0;
     }
 
+    .selling__product .selling__product--bottom .selling__product--list .product__item,
+    .flash__sale .flash__sale--list .product__item {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .product__item .status {
+        left: 10px;
+    }
 
     /* ===== Slider ====== */
 
@@ -2383,6 +2405,14 @@ footer .get__app span {
         width: calc(50% - 20px);
     }
 
+    .selling__product .selling__product--top .type__product .item.item:not(:last-child) {
+        margin-right: 5px;
+    }
+
+    .selling__product .selling__product--top .type__product .item {
+        font-size: 12px;
+    }
+
     /* ===== newsletter ===== */
 
     .news__letter .news__letter--wrap .news__letter--desc {
@@ -2418,6 +2448,8 @@ footer .get__app span {
 
     footer .footer__top .footer__top--list .active.footer__top--item .footer__top--list  {
         height: 160px;
+        -webkit-transition: all .3s ease;
+        -o-transition: all .3s ease;
         transition: all .3s ease;
     }
 
