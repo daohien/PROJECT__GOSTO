@@ -969,7 +969,7 @@ header .header__main {
     border: 2px solid var(--color__border);
     border-left: none;
     position: fixed;
-    top: 203px;
+    top: 150px;
     left: 0;
     z-index: 1000000000000;
     padding: 5px;
@@ -2086,6 +2086,11 @@ footer .get__app span {
 }
 
 @media screen and (max-width: 1200px) {
+
+    .d__flex .line  {
+        display: none;
+    }
+    
     .container__wrap .main__content .slider .flex__right .item .slide__relative .slide__absolute {
         top: 5px;
     }
@@ -2595,6 +2600,10 @@ footer .get__app span {
     }
 
     /* ===== Slider ===== */
+
+    .container__wrap .main__content .slider {
+        margin-top: -20px;
+    }
 
     .container__wrap .main__content .slider .slide__primary--trending {
         margin-bottom: 0px;
