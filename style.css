@@ -2090,7 +2090,7 @@ footer .get__app span {
     .d__flex .line  {
         display: none;
     }
-    
+
     .container__wrap .main__content .slider .flex__right .item .slide__relative .slide__absolute {
         top: 5px;
     }
@@ -2520,6 +2520,7 @@ footer .get__app span {
 
     .container__wrap .main__content {
         padding: 20px;
+        padding-top: 0px;
     }
 
     /* ===== header ===== */
@@ -2589,10 +2590,6 @@ footer .get__app span {
                         order: 4;
     }
 
-    /* .header__main .header__main--wrap .header__social .header__social--item:nth-child(3) {
-        margin-right: 0px;
-    } */
-
     /* ==== menu ==== */
 
     .header__main .header__menu .list__item {
@@ -2601,9 +2598,9 @@ footer .get__app span {
 
     /* ===== Slider ===== */
 
-    .container__wrap .main__content .slider {
+    /* .container__wrap .main__content .slider {
         margin-top: -20px;
-    }
+    } */
 
     .container__wrap .main__content .slider .slide__primary--trending {
         margin-bottom: 0px;
@@ -2674,6 +2671,10 @@ footer .get__app span {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
+    }
+
+    .selling__product .selling__product--top .arrow {
+        display: none;
     }
 
     /* ===== banner ===== */
@@ -2749,6 +2750,10 @@ footer .get__app span {
         width: 60%;
     } 
 
+    .header__main .header__main--wrap .header__social .header__social--item:nth-child(3) {
+        margin-right: 20px;
+    }
+
     /* ===== slider ===== */
 
     .container__wrap .main__content .slider .flex__right .slide__primary--wrap {
@@ -2778,20 +2783,20 @@ footer .get__app span {
 
     /* ===== selling product ===== */
 
+    .selling__product .selling__product--top {
+        flex-direction: row;
+    }
+
+    .selling__product .selling__product--top .right__wrap {
+        margin-top: 0px;
+    }
+
     .selling__product .selling__product--top .type__product {
-        max-width: 300px;
-    }
-
-    .selling__product .selling__product--top .type__product .item {
-        margin: 0 10px;
-    }
-
-    .selling__product .selling__product--top .type__product .item:nth-child(n+3){
-        margin-top: 20px;
-    }
-
-    .selling__product .selling__product--top .arrow {
         display: none;
+    }
+
+    .selling__product .selling__product--top .arrow  {
+        display: inherit;
     }
 
     /* ===== banner ===== */
