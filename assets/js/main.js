@@ -67,7 +67,7 @@ function allCategory(){
     let checks ="clickOne";
     let menuTitle = document.getElementById("click__show--info");
     let menuList = document.querySelector("#menu__show");
-    console.log(menuList)
+    // console.log(menuList)
     menuTitle.addEventListener("click", function(){
         if(checks == "clickOne"){
             checks = "clickTwo";
@@ -81,10 +81,27 @@ function allCategory(){
 
 allCategory()
 
+// sub__menu
+
+function subMenu(){
+    let sub = document.querySelectorAll(".sub");
+    for (let i = 0; i < sub.length; i++) {
+        sub[i].addEventListener("click", function () {
+            var testSub = this.className;
+            for (i = 0; i < sub.length; i++) {
+                sub[i].className = "sub item";
+            }
+            if (testSub == "sub item") {
+                this.className="sub item change";
+            }
+        })
+    }
+}
+
+subMenu()
+
 // footer
 
-let footerItem = document.querySelectorAll(".footer__top > .footer__top--list > .footer__top--item")
-let footerDesc = document.querySelectorAll(".footer__top > .footer__top--list > .footer__top--item> .footer__top--list")
 function footer() {
     let footerItem = document.querySelectorAll(".footer__top > .footer__top--list > .footer__top--item")
     let footerDesc = document.querySelectorAll(".footer__top > .footer__top--list > .footer__top--item> .footer__top--list")
