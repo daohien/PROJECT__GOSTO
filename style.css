@@ -1984,17 +1984,6 @@ footer .get__app span {
 
 @media (max-width: 1400px){
     
-    .container__wrap .main__content .slider .flex__left {
-        margin-left: 7px;
-    }
-    
-    .container__wrap .main__content .slider .flex__right {
-        margin-right: 7px;
-    }
-    
-    .container__wrap .main__content .slider .flex__center {
-        margin: 0 7px;
-    }
 
     /* ===== general ===== */
 
@@ -2010,6 +1999,18 @@ footer .get__app span {
     .main__content .slider .flex__left .item .slide__relative .slide__absolute {
         top: 30px;
         left: 30px;
+    }
+
+    .container__wrap .main__content .slider .flex__left {
+        margin-left: 7px;
+    }
+    
+    .container__wrap .main__content .slider .flex__right {
+        margin-right: 7px;
+    }
+    
+    .container__wrap .main__content .slider .flex__center {
+        margin: 0 7px;
     }
 
     /* ===== header ===== */
