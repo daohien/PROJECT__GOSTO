@@ -22,6 +22,7 @@
     --color__footer--line: #225641;
     --color__sale: #a4a4a4;
     --color__sold: #666;
+    --color__arrow: #e3e8ed;
     /* ===== Background ===== */
     --bg__border--right: #aeb4be;
     --bg__primary: #09432b;
@@ -231,8 +232,9 @@ p {
 
 .arrow .arrow--next i,
 .arrow .arrow--prev i {
-    color: var(--bg__border);
+    color: var(--color__arrow);
     font-size: 10px;
+    font-weight: 600;
 }
 
 .arrow .arrow--next:hover i,
@@ -1395,6 +1397,7 @@ header .header__main {
     -o-transition: all .3s ease;
     transition: all .3s ease;
     font-size: 13px;
+    color: var(--color__text--secondary);
 }
 
 .selling__product .selling__product--top .type__product .item.item:not(:last-child){
@@ -1643,13 +1646,13 @@ header .header__main {
 
 .news__letter .news__letter--wrap .get__info .submit {
     position: absolute;
-    right: 2px;
+    right: 3px;
     top: 50%;
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
     height: 45px;
-    padding: 0 30px;
+    padding: 0 32px;
     background-color: var(--color-secondary);
     line-height: 45px;
 }
