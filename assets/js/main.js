@@ -81,7 +81,7 @@ function allCategory(){
 
 allCategory()
 
-// sub__menu
+// sub__menu--main
 
 function subMenu(){
     let sub = document.querySelectorAll(".sub");
