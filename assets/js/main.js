@@ -67,7 +67,6 @@ function allCategory(){
     let checks ="clickOne";
     let menuTitle = document.getElementById("click__show--info");
     let menuList = document.querySelector("#menu__show");
-    // console.log(menuList)
     menuTitle.addEventListener("click", function(){
         if(checks == "clickOne"){
             checks = "clickTwo";
